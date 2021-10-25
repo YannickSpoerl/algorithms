@@ -15,11 +15,12 @@ def edit_distance(string1: str, string2: str, delta_cost_func: Callable[[str, st
         for j in range(0, len(string2) + 1):
             if i == 0 and j == 0:
                 alignment_table[i].append(0)
+                continue
             elif i == 0 and j != 0:
-                alignment_table[i].append(delta_cost_func("", string2[j - 1]))
+                alignment_table[i].append(alignment_table[i][j - 1] + delta_cost_func("", string2[j - 1]))
                 continue
             elif i != 0 and j == 0:
-                alignment_table[i].append(delta_cost_func(string1[i - 1], ""))
+                alignment_table[i].append(alignment_table[i - 1][j] + delta_cost_func(string1[i - 1], ""))
                 continue
 
             cost_delete1 = alignment_table[i - 1][j] + delta_cost_func("", string2[j - 1])
