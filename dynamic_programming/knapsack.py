@@ -1,7 +1,7 @@
 class KnapsackItem:
     """Item with id, weight and value for use in knapsack"""
 
-    def __init__(self, item_id, weight, value):
+    def __init__(self, item_id: str, weight: int, value: int):
         self.item_id = item_id
         self.weight = weight
         self.value = value
