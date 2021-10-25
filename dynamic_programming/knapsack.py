@@ -10,7 +10,7 @@ class KnapsackItem:
         return f"({self.item_id}, {self.weight}, {self.value})"
 
 
-def knapsack(list_of_items: list, max_capacity: int) -> (list, int):
+def knapsack(list_of_items: list[KnapsackItem], max_capacity: int) -> (list[KnapsackItem], int):
     """Returns subset, total-value of list_items with highest accumulative value with total_capacity =< max_capacity"""
     val_table = []
     list_table = []
