@@ -10,7 +10,8 @@ A collection of common algorithms.
 | [bellman_ford.py](https://github.com/YannickSpoerl/algorithms/blob/main/dynamic_programming/bellman_ford.py) | [Bellman-Ford](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) | O(n ⋅ m) |
 | [sieve_of_eratosthenes.py](https://github.com/YannickSpoerl/algorithms/blob/main/dynamic_programming/sieve_of_eratosthenes.py) | [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) | O(n ⋅ log log n) |
 | [robot_paths.py](https://github.com/YannickSpoerl/algorithms/blob/main/dynamic_programming/robot_paths.py) | / | O(n²)
-| [subset_sum.py](https://github.com/YannickSpoerl/algorithms/blob/main/dynamic_programming/subset_sum.py) | [Subset sum problem](https://en.wikipedia.org/wiki/Subset_sum_problem) | O(n ⋅ W), [pseudo-polynomial](https://en.wikipedia.org/wiki/Pseudo-polynomial_time)
+| [subset_sum.py](https://github.com/YannickSpoerl/algorithms/blob/main/dynamic_programming/subset_sum.py) | [Subset sum problem](https://en.wikipedia.org/wiki/Subset_sum_problem) | O(n ⋅ W), [pseudo-polynomial](https://en.wikipedia.org/wiki/Pseudo-polynomial_time) |
+| [alarm_problem.py](https://github.com/YannickSpoerl/algorithms/blob/main/dynamic_programming/alarm_problem.py) | / | O(n) |
 | *Greedy Algorithms* |||
 | [dijkstra.py](https://github.com/YannickSpoerl/algorithms/blob/main/greedy/dijsktra.py) | [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) | O(n²) |
 | *Network-Flow Algorithms* |||
