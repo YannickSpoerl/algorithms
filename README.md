@@ -14,7 +14,8 @@ A collection of common algorithms.
 | [alarm_problem.py](https://github.com/YannickSpoerl/algorithms/blob/main/dynamic_programming/alarm_problem.py) | / | O(n) |
 | [snakes_on_a_grid.py](https://github.com/YannickSpoerl/algorithms/blob/main/dynamic_programming/snakes_on_a_grid.py) | / | O(n ⋅ m) |
 | *Greedy Algorithms* |||
-| [dijkstra.py](https://github.com/YannickSpoerl/algorithms/blob/main/greedy/dijsktra.py) | [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) | O(n²) |
+| [dijkstra.py](https://github.com/YannickSpoerl/algorithms/blob/main/greedy/dijsktra.py) | [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) | O(n²) |
+| [kruskal.py](https://github.com/YannickSpoerl/algorithms/blob/main/greedy/kruskal.py) | [Kruskal's algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) | O(m log m) |
 | *Network-Flow Algorithms* |||
 | [edmonds_karp.py](https://github.com/YannickSpoerl/algorithms/blob/main/network_flow/edmonds_karp.py) | [Edmonds-Karp](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm) | O(n ⋅ m²) |
 | *Matching Algorithms* |||
