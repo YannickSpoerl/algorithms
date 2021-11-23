@@ -17,6 +17,7 @@ A collection of common algorithms.
 | [dijkstra.py](https://github.com/YannickSpoerl/algorithms/blob/main/greedy/dijsktra.py) | [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) | O(n²) |
 | [kruskal.py](https://github.com/YannickSpoerl/algorithms/blob/main/greedy/kruskal.py) | [Kruskal's algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm) | O(m log m) |
 | [huffman.py](https://github.com/YannickSpoerl/algorithms/blob/main/greedy/huffman.py) | [Huffman coding](https://en.wikipedia.org/wiki/Huffman_coding) | O(n log n) |
+| [check_bipartiteness.py](https://github.com/YannickSpoerl/algorithms/blob/main/greedy/check_bipartiteness.py) | [Bipartite graph](https://en.wikipedia.org/wiki/Bipartite_graph) | O(n + m) |
 | *Network-Flow Algorithms* |||
 | [edmonds_karp.py](https://github.com/YannickSpoerl/algorithms/blob/main/network_flow/edmonds_karp.py) | [Edmonds-Karp](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm) | O(n ⋅ m²) |
 | *Matching Algorithms* |||
