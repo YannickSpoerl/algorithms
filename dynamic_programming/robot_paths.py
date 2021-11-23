@@ -1,4 +1,9 @@
 def robot_paths(x: int, y: int) -> int:
+    """compute the number of paths from top-left to bottom-right cell in a x-y-grid
+    :param x: width of grid
+    :param y: length of grid
+    :return: number of possible paths, when only walking right or down a cell
+    """
     number_of_paths = []
     for i in range(0, x + 1):
         number_of_paths.append([])

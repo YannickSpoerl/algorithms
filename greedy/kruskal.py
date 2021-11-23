@@ -2,6 +2,7 @@ from typing import Optional
 
 
 class KruskalNode:
+    """a node in a graph for the kruskal algorithm"""
 
     def __init__(self, name: str):
         self.name = name
@@ -11,6 +12,7 @@ class KruskalNode:
 
 
 class KruskalEdge:
+    """an edge between two nodes in a graph for the kruskal algorithm"""
 
     def __init__(self, node1: KruskalNode, node2: KruskalNode, weight: int):
         self.node1 = node1
@@ -49,6 +51,11 @@ class UnionFind:
 
 
 def kruskal(nodes: list[KruskalNode], edges: list[KruskalEdge]) -> list[KruskalEdge]:
+    """computes the minimal spanning tree in a directed graph with weighted edges
+    :param nodes: the list of nodes
+    :param edges: the list of edges
+    :return: the list of edges that are contained in the MST
+    """
     union_find = UnionFind()
     minimum_spanning_tree = []
     for node in nodes:

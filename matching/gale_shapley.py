@@ -1,4 +1,5 @@
 class ObjectA:
+    """first type of object to be matched when running the gale-shapley algorithm"""
 
     def __init__(self, name: str):
         self.name = name
@@ -8,6 +9,7 @@ class ObjectA:
 
 
 class ObjectB:
+    """second type of object to be matched when running the gale-shapley algorithm"""
 
     def __init__(self, name: str):
         self.name = name
@@ -18,6 +20,11 @@ class ObjectB:
 
 def gale_shapley(preferences_a: dict[ObjectA, list[ObjectB]], preferences_b: dict[ObjectB, list[ObjectA]]) -> \
         dict[ObjectA, ObjectB]:
+    """computes a stable matching given a two lists of objects and the preferences
+    :param preferences_a: dictionary with all objects_a and the list of their preferences
+    :param preferences_b: dictionary with all objects_b and the list of their preferences
+    :return: dictionary of the stable matching from objects_b to objects_a
+    """
     matching_a = {}
     matching_b = {}
     unmatched_a = list(preferences_a.keys())

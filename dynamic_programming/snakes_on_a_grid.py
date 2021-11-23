@@ -1,4 +1,8 @@
 def snakes_on_a_grid(grid: list[list[int]]) -> (list[int], int):
+    """compute the way from left to right in a grid with greatest sum of cells while only taking one cell each column
+    :param grid: matrix of integers
+    :return: the greatest possible sum as well as which cell to take in each column
+    """
     dp_table = []
     dp_table_path = []
     for i in range(0, len(grid) + 1):

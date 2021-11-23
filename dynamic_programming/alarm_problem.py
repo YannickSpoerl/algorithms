@@ -1,4 +1,8 @@
 def alarm_problem(integers: list[int]) -> (int, list[int]):
+    """Given a list of integers, compute the biggest sum, without choosing two consecutive numbers
+    :param integers: a list of integers
+    :return: the max-sum and the list of picked integers
+    """
     pick = [integers[0]]
     skip = [0]
     pick_pred = [[0]]

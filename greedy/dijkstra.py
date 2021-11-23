@@ -1,4 +1,5 @@
 class DijkstraNode:
+    """a node in a graph for the dijkstra algorithm"""
 
     def __init__(self, name: str):
         self.name = name
@@ -8,6 +9,7 @@ class DijkstraNode:
 
 
 class DijkstraEdge:
+    """an edge between two nodes in a graph for the dijkstra algorithm"""
 
     def __init__(self, start: DijkstraNode, end: DijkstraNode, weight: int):
         self.start = start
@@ -19,6 +21,13 @@ class DijkstraEdge:
 
 
 def dijkstra(nodes: list[DijkstraNode], edges: list[DijkstraEdge], source: DijkstraNode) -> dict[DijkstraNode, int]:
+    """computes min-distance from a source to all other nodes  in a directed graph with weighted edges
+    :param nodes: a list of nodes
+    :param edges: a list of weighted edges
+    :param source: the node to start from
+    :return: a dictionary with the min-distance for every node
+    """
+
     distances = {}
     undiscovered = nodes.copy()
     for node in nodes:

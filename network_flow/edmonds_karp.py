@@ -2,6 +2,7 @@ from typing import Optional
 
 
 class EdmondsKarpNode:
+    """node for the edmonds-karp algorithm"""
 
     def __init__(self, name: str):
         self.name = name
@@ -11,6 +12,7 @@ class EdmondsKarpNode:
 
 
 class EdmondsKarpEdge:
+    """edge with capacity between two nodes for the edmonds-karp algorithm"""
 
     def __init__(self, start: EdmondsKarpNode, end: EdmondsKarpNode, capacity: int):
         self.start = start
@@ -22,6 +24,13 @@ class EdmondsKarpEdge:
 
 
 def edmonds_karp(source: EdmondsKarpNode, sink: EdmondsKarpNode, edges: list[EdmondsKarpEdge]) -> int:
+    """given a source- and sink-node and a graph, compute the max-flow
+    :param source: source-node
+    :param sink: sink-node
+    :param edges: list of directed edges with capacities
+    :return: the max-flow
+    """
+
     max_flow = 0
 
     shortest_path = find_path(source, sink, edges)

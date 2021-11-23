@@ -7,8 +7,13 @@ def default_cost_func(char1: str, char2: str) -> int:
     return 1
 
 
-def edit_distance(string1: str, string2: str, delta_cost_func: Callable[[str, str], int] = default_cost_func):
-    """Given two string, and an optional cost-function for two chars, computes the minimum-distance"""
+def edit_distance(string1: str, string2: str, delta_cost_func: Callable[[str, str], int] = default_cost_func) -> int:
+    """Given two string, and an optional cost-function for two chars, computes the minimum-distance
+    :param string1: first string to compare
+    :param string2: second string to compare
+    :param delta_cost_func: a function that takes two characters (including empty) and returns the cost of alignment
+    :return: the minimal cost of aligning both strings
+    """
     alignment_table = []
     for i in range(0, len(string1) + 1):
         alignment_table.append([])
